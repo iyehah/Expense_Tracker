@@ -3,7 +3,7 @@ import React from 'react';
 const ExpenseItem = ({ expense }) => {
   return (
     <li>
-      <strong>{expense}</strong> {expense.amount} UMR
+      <strong>{expense.name}</strong> {expense.amount} UMR
     </li>
   );
 };
