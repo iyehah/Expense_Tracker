@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header .balance {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons button {
+  background-color: #ffffff;
+  border: none;
+  color: #4caf50;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons button svg {
+  margin-right: 0.5rem;
+}
+
+
+.container {
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #96ec99cc;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #81c784;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.popup-inner {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4caf50;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-top: 1px solid #888585;
+  padding-top: 1rem;
+}
+
+.summary h5 {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border-radius: 0.25rem;
+}
+
+.red {
+  color: #f44336;
+}
+
+
+.ExpensesList {
+  color: #888585;
+}
